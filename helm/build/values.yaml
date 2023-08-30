@@ -1,0 +1,15 @@
+app:
+  name: testapp-poi-map-app
+  namespace: testapp
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/testapp-frontend
+  org: rhdh-deploy
+  name: testapp-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: testapp/poi-map-app
+  tag: latest
